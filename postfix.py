@@ -20,7 +20,14 @@ class IllegalExpressionException(Exception):
 
 def calculate(expr):
 	"""
-	Calculator function operating on the postfix expression 
+	@param expr : expression string with operators and operands seperated by space
+	@type expr : string 
+
+	returns : evaluated answer
+	@type : integer
+
+	@raises : L{IllegalExpressionException}
+	Calculator function operating on the expression  
 	"""
 	stack = [] # to store the operands 
 	expr_list = expr.split(" ") # spliting the space seperated expression and storing in seperate list
