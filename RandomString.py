@@ -6,7 +6,7 @@ class InvalidCountException(Exception):
 	a_count = 10
 	b_count = 2
 
-	Sequence might appear with with 
+	Sequence might appear with more than three consequetive characters
 	"""
 	def __init__(self, message):
 		super().__init__(message)
